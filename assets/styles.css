@@ -1,0 +1,100 @@
+/*----- Reset -----*/
+
+html{height: 100px;}
+img {max-width: 100%; display: block;}
+*{box-sizing: border-box;}
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,figure{margin: 0; padding:0}
+
+a:link {
+  text-decoration: none;
+}
+
+body , a , h1, h2 , form, input, select, .form-control{
+  color: #232323;
+  font-size: 12px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  text-transform: uppercase
+  ;
+}
+
+nav a, .search {
+  width: 120px;
+  margin-right: 12px;
+}
+
+form h1{
+  color:red;
+  padding: 10px 0px;
+  font-weight: 600;
+  font-size: 18px;
+}
+nav .img-svg{
+  width: 12px;
+  padding:0 1px;
+  ;
+}
+button{
+  background-color: white;
+  color: gray;
+  width: 30%;
+}
+.img-svg{
+  width: 20px;
+  padding:0 1px;
+}
+
+.grayborder{
+  border-bottom: gray solid 2px;
+
+}
+.redborder{
+  border-bottom: 5px solid red;
+  width: 50%
+}
+.form-control{
+  padding: 5px;
+  margin: 10px 5px;
+  border-radius: 0;
+  border: transparent;
+}
+/* Container holding the image and the text */
+.overlay {
+    position: relative;
+  }
+
+
+
+/* Centered text */
+.centered-bottom{
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  border-bottom: solid 3px;
+  padding: 10px;
+}
+.search {
+  border: transparent;
+}
+
+
+.red{
+  color:#d40f85
+}
+.blue{
+  color: #0079a7
+}
+.Green{
+  color:#16e4b9
+}
+.orange{
+  color:#f36c2e
+}
+
+@media only screen and (max-width: 720px) {
+  mobilereplacement {
+    margin-top: 50%;
+  }
+}
