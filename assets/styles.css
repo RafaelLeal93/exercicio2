@@ -1,6 +1,6 @@
 /*----- Reset -----*/
 
-html{height: 100px;}
+html{height: 100%;}
 img {max-width: 100%; display: block;}
 *{box-sizing: border-box;}
 body,h1,h2,h3,h4,h5,h6,p,ul,ol,figure{margin: 0; padding:0}
@@ -9,7 +9,7 @@ a:link {
   text-decoration: none;
 }
 
-body , a , h1, h2 , form, input, select, .form-control{
+body,a,h1,h2,form,input,select,.form-control{
   color: #232323;
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
@@ -18,9 +18,8 @@ body , a , h1, h2 , form, input, select, .form-control{
   ;
 }
 
-nav a, .search {
-  width: 120px;
-  margin-right: 12px;
+li{
+  width: 10rem;
 }
 
 form h1{
@@ -29,42 +28,66 @@ form h1{
   font-weight: 600;
   font-size: 18px;
 }
-nav .img-svg{
-  width: 12px;
-  padding:0 1px;
-  ;
-}
+
 button{
   background-color: white;
   color: gray;
-  width: 30%;
 }
-.img-svg{
-  width: 20px;
-  padding:0 1px;
+.searchbackground{
+  background-image: url("../assets/svgs/solid/search.svg");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: left;
+}
+.namebackground{
+  background-image: url("../assets/svgs/regular/user.svg");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: left;
+}
+.emailbackground{
+  background-image: url("../assets/svgs/regular/envelope.svg");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: left;
+}
+.countrybackground{
+  background-image: url("../assets/svgs/solid/map-marked.svg");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: left;
+}
+.occupationbackground{
+  background-image: url("../assets/svgs/solid/briefcase.svg");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: left;
+}
+.companybackground{
+  background-image: url("../assets/svgs/solid/building.svg");
+  background-repeat: no-repeat;
+  background-size: 1em;
+  background-position: left;
 }
 
 .grayborder{
   border-bottom: gray solid 2px;
-
 }
 .redborder{
   border-bottom: 5px solid red;
   width: 50%
 }
 .form-control{
-  padding: 5px;
+  padding: 5px 5px 5px 20px;
   margin: 10px 5px;
   border-radius: 0;
   border: transparent;
+
 }
 /* Container holding the image and the text */
 .overlay {
     position: relative;
   }
-
-
-
 /* Centered text */
 .centered-bottom{
   position: absolute;
@@ -77,9 +100,8 @@ button{
 }
 .search {
   border: transparent;
+  padding-left: 20px;
 }
-
-
 .red{
   color:#d40f85
 }
@@ -92,9 +114,18 @@ button{
 .orange{
   color:#f36c2e
 }
-
-@media only screen and (max-width: 720px) {
-  mobilereplacement {
-    margin-top: 50%;
+.marginleft{
+  margin-left: 2rem;
+}
+.locationwidth{
+  width: 50%;
+}
+@media only screen and (max-width: 765px) {
+  .marginleft {
+    margin: 0px 0px;
+    ;
+  }
+  .locationwidth{
+    width: 100%;
   }
 }
